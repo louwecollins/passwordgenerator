@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <!--header-->
+        <div class="headertext">
+            <div>
+                <p>Personal Project</p>
+            </div>
+            <div>
+                <p>HTML | CSS | JS</p>
+            </div>
+        </div>
+
+
+        <!--body-->
+        <div class="container">
+            <div class="innerContainer">
+
+                <div class="topLayer">
+
+                    <!--hero title/header section-->
+                    <div class="hero-Header">
+                        <div class="logo">
+                        <img src="passwordlogo.svg" alt="image of password lock as a logo in orange" id="logo-img">
+                        </div>
+                        <div class="hero-title">
+                            <h2>Random Password Generator</h2>
+                            <p>Generate a random password and never use an insecure password again.</p>
+                        </div>
+                    </div>
+
+                    <!--password section-->
+                    <div class="password-display">
+
+                        <div class="password-display-card">
+                            <p>Password 1</p>
+                            <h3 id="passwordDisplay1">-</h3>
+                            <button class="icon-img-cta" id="copy-pwd1-btn">
+                                <img src="copyicon.svg" alt="copy icon image" id="icon-cta">
+                            </button>
+                            <button class="icon-img-cta" id="reset-pwd1-btn">
+                                <img src="restarticon.svg" alt="reset icon image" id="icon-cta">
+                            </button>
+                        </div>
+
+                        <div class="password-display-card">
+                            <p>Password 2</p>
+                            <h3 id="passwordDisplay2">-</h3>
+                            <button class="icon-img-cta" id="copy-pwd2-btn">
+                                <img src="copyicon.svg" alt="copy icon image" id="icon-cta">
+                            </button>
+                            <button class="icon-img-cta" id="reset-pwd2-btn">
+                                <img src="restarticon.svg" alt="reset icon image" id="icon-cta">
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!--alert text-->
+                    <div class="alert-text">
+                        <p id="passwordUpdate">Click on the <b>“copy icon”</b> to copy password</p>
+                    </div>
+
+                </div>
+
+                <div class="bottomLayer">
+
+                    <!--password setting section-->
+                    <div class="password-settings">
+
+                        <!--slider-->
+                        <div class="slider-component">
+
+                            <div class="slider-text-wrapper">
+                                <h3 class="title-text-slider">Character length</h3>
+                                <p><span id="demo"></span></p>
+                            </div>
+
+                            <div class="slidecontainer">
+                                <input type="range" min="0" max="15" value="0" class="slider" id="myRange">
+                            </div>
+                            
+                        </div>
+
+                        <!--1 toggle section-->
+                        <div class="toggle-section">
+
+                            <div class="togglecomponent">
+                                <div class="title-block">
+                                    <h3 class="title-text-slider">Lowercase letters</h3>
+                                    <p>eg. asfgfdwwa</p>
+                                </div>
+                                <div class="togglewrapper">
+                                    <label class="switch">
+                                        <input type="checkbox" id="lowercase">
+                                        <span class="slider-round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="togglecomponent">
+                                <div class="title-block">
+                                    <h3 class="title-text-slider">Numbers</h3>
+                                    <p>eg. 231355366</p>
+                                </div>
+                                <div class="togglewrapper">
+                                    <label class="switch">
+                                        <input type="checkbox" id="numbers">
+                                        <span class="slider-round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--2 toggle section-->
+                            <div class="toggle-section">
+
+                            <div class="togglecomponent">
+                                <div class="title-block">
+                                    <h3 class="title-text-slider">Uppercase letters</h3>
+                                    <p>eg. ASDFFDS</p>
+                                </div>
+                                <div class="togglewrapper">
+                                    <label class="switch">
+                                        <input type="checkbox" id="uppercase">
+                                        <span class="slider-round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="togglecomponent">
+                                <div class="title-block">
+                                    <h3 class="title-text-slider">Symbols</h3>
+                                    <p>eg. @!#$%&*+</p>
+                                </div>
+                                <div class="togglewrapper">
+                                    <label class="switch">
+                                        <input type="checkbox" id="symbols">
+                                        <span class="slider-round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--divider-->
+                    <div class="divider"></div>
+
+                    <!--Main CTA's section-->
+                    <div id="btn-container">
+
+                        <!--restart button-->
+                        <button id="restart-btn"><img src="restarticon.svg" alt="copy icon image" id="restart-cta"></button>
+
+                        <!--generate button-->
+                        <button id="generate-btn">Generate password</button>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--footer-->
+        <div class="footertext">
+            <p>Collins</p>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
